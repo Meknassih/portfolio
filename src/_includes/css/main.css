@@ -128,3 +128,10 @@ footer {
 	bottom: 0;
 	left: 0;
 }
+
+.hashnode-icon {
+	height: 0.9em;
+	width: 0.9em;
+	color: #399fff;
+	background-image: url(assets/icons/hashnode.min.svg);
+}
