@@ -1,26 +1,16 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Portfolio built with Eleventy.",
-  "main": "index.js",
-  "dependencies": {
-    "clean-css": "^4.2.1"
-  },
-  "peerDependencies": {
-    "@11ty/eleventy": "^0.8.0"
-  },
+  "name": "@example/basics",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "serve": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Meknassih/portfolio.git"
-  },
-  "author": "Meknassih",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/Meknassih/portfolio.git/issues"
-  },
-  "homepage": "https://github.com/Meknassih/portfolio.git"
+  "devDependencies": {
+    "@astrojs/tailwind": "^1.0.0",
+    "astro": "^1.0.8"
+  }
 }

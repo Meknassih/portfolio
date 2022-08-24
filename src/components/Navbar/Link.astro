@@ -1,0 +1,9 @@
+---
+export interface Props {
+	href: string;
+}
+const children = Astro.slots;
+const { href } = Astro.props as Props;
+---
+
+<a class="font-semibold active:font-bold px-2 rounded-md underline underline-offset-4 hover:decoration-dotted" href={href}>{children.render("default")}</a>
