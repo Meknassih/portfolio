@@ -62,6 +62,7 @@ body {
 	padding: 30px;
 	align-items: center;
 	justify-content: center;
+	max-width: 800px;
 }
 
 .icon {
