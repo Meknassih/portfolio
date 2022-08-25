@@ -1,6 +1,15 @@
+---
+layout: "base"
+url: "https://meknassih.com"
+title: "Portfolio"
+description: "Hamza El Meknassi's web development portfolio"
+favicon: "./assets/icons/favicon.png"
+header_picture: "./assets/images/image.png"
+header_picture_description: "This is me."
+---
 # Meknassih
 
-Hello, my name is Hamza. I am a web developer and I am passionate about everything involving creating software as much as web applications.
+Hello, my name is Hamza. I am a web developer and I am passionate about everything involving creating software, web applications and APIs.
 
 ## Social
 [<i class="bi-twitter"></i> Twitter](https://twitter.com/MeknassiPro) | [<i class="bi-github"></i> Github](https://github.com/Meknassih) | [<i>
@@ -10,6 +19,7 @@ Hello, my name is Hamza. I am a web developer and I am passionate about everythi
 </i> Blog](https://blog.meknassih.com)
 
 ## Contact
-Send me <a href="mailto:elmeknassi.h@gmail.com?subject=Request from meknassih.com">an email</a>.
+Send me <a href="mailto:hamza@elmeknassi.fr?subject=Request from meknassih.com">an email <i class="bi bi-box-arrow-up-right"></i></a>.
 
-
+## Projects
+I made a list of side-projects that I make for fun. [Have a look <i class="bi-arrow-right"></i> ](/projects)

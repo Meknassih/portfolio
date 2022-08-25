@@ -1,0 +1,18 @@
+---
+layout: "base"
+title: "Projects"
+description: "Hamza El Meknassi's list of side-projects"
+favicon: "./assets/icons/favicon.png"
+---
+{{ content | safe }}
+  {%- for project in collections.project -%}
+  <div class="project-card">
+    <a class="project-card-title" href="{{ project.data.url or '#'}}">{{ project.data.title }}</a>
+    <p class="project-card-desc">{{ project.data.description }}</p>
+    <ul>
+      {%- for technology in project.data.technologies -%}
+      <li class="project-card-item">{{technology}}</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+{%- endfor -%}
