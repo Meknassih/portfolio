@@ -11,7 +11,7 @@ favicon: "./assets/icons/favicon.png"
     <p class="project-card-desc">{{ project.data.description }}</p>
     <ul>
       {%- for technology in project.data.technologies -%}
-      <li class="project-card-item">{{technology}}</li>
+      <li class="project-card-item">{{technology | titlecase}}</li>
       {%- endfor -%}
     </ul>
   </div>

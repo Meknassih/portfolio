@@ -22,4 +22,4 @@ Hello, my name is Hamza. I am a web developer and I am passionate about everythi
 Send me <a href="mailto:hamza@elmeknassi.fr?subject=Request from meknassih.com">an email <i class="bi bi-box-arrow-up-right"></i></a>.
 
 ## Projects
-I made a list of side-projects that I make for fun. [Have a look <i class="bi-arrow-right"></i> ](/projects)
+I make side-projects for fun to discover and learn more about tools and frameworks I don’t have the opportunity to use at work. [Have a look <i class="bi-arrow-right"></i> ](/projects)

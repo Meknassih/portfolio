@@ -37,12 +37,10 @@
     </h1>
     <div class="container">
       <div class="box">
-        <section>
-          {% include "components/header.njk" %}
-          <div class="content">
-            {{ content | safe }}
-          </div>
-        </section>
+        {% include "components/header.njk" %}
+        <div class="content">
+          {{ content | safe }}
+        </div>
       </div>
     </div>
     {% include "components/footer.njk" %}

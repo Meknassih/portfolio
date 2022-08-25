@@ -4,13 +4,13 @@
 
 @media screen and (orientation: landscape) {
 	.box {
-		width: 40%;
+		width: 80%;
 	}
 }
 
 @media screen and (orientation: portrait) {
 	.box {
-		width: 70%;
+		width: 60%;
 	}
 }
 
@@ -23,36 +23,45 @@
 		box-shadow: 0 0 4px 1px rgba(0, 0, 0, .1);
 	}
 }
+@keyframes background-gradient-animation {
+	0% {
+		background-position: 0% 86%
+	}
+
+	50% {
+		background-position: 100% 15%
+	}
+
+	100% {
+		background-position: 0% 86%
+	}
+}
 body {
 	background: #f0f0f0;
 	background: linear-gradient(153deg, rgba(240, 240, 240, 1) 0%, rgba(230, 230, 230, 1) 100%);
 }
 
 html,
-body,
-.container {
-	font-family: "Overpass Mono", monospace;
-	text-align: center;
+body {
+	font-family: "Overpass Mono",
+		monospace;
 	color: #1a1a1a;
-	height: 99%;
+	height: 100vh
 }
 
-.container {
-	display: flex;
-	align-items: flex;
-	justify-content: flex;
+.content {
+	background-color: #f0f0f091;
+	border-radius: 1rem;
+	backdrop-filter: blur(10px);
+	padding: 16px;
 }
-
 .box {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	margin: auto;
 	padding: 30px;
 	align-items: center;
 	justify-content: center;
-	-webkit-flex-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
 }
 
 .icon {
@@ -69,16 +78,22 @@ body,
 .bcg-text {
 	font-size: 3em;
 	position: fixed;
-	color: rgb(0, 0, 0, 0.04);
+	color: transparent;
 	top: 0;
 	left: 0;
 	writing-mode: vertical-rl;
+	overflow: clip;
 	height: 100%;
 	transform: rotate(180deg);
 	text-align: justify;
 	user-select: none;
 	letter-spacing: -6px;
 	z-index: -1;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-image: linear-gradient(234deg, #5ad6b6, #902fa9);
+	background-size: 400% 400%;
+	animation: background-gradient-animation 30s ease infinite;
 }
 
 ul,
@@ -132,10 +147,11 @@ code {
 footer {
 	font-size: 12px;
 	position: fixed;
-	background: rgb(255 255 255 / 47%);
+	background: rgb(250, 250, 250);
 	width: 100%;
 	bottom: 0;
 	left: 0;
+	text-align: center;
 }
 
 .hashnode-icon {
@@ -166,6 +182,7 @@ footer {
 
 .project-card-item {
 	font-size: smaller;
+	font-variant: small-caps;
 }
 
 li {
@@ -177,6 +194,9 @@ li:not(:last-child) {
 	border-right: 2px solid #7a7a7a69;
 }
 
+li:first-child {
+	padding-left: 0;
+}
 li::marker {
 	content: ">";
 	font-weight: bold;
